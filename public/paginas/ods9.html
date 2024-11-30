@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/ods9.css">
+    <link rel="stylesheet" href="/css/navegacion-estilos.css">
+</head>
+
+<body>
+   
+    <div class="caja-header">
+        <a href="/" class="logo">
+            <img src="/image/logo.png" alt="Logotipo VentaFlow">
+            <span class="nombre-logo">ByteCrafters</span>
+        </a>
+        <nav class="menu">
+            <a href="/paginas/nosotros.html">Nosotros</a>
+            <a href="/paginas/noticias.html">Noticias</a>
+            <a href="producto.html">Producto</a>
+            <a href="soporte">Soporte</a>
+
+            <!-- Menú desplegable -->
+            <div class="dropdown">
+                <span class="dropdown-btn">Ayuda a los ODS</span>
+                <div class="dropdown-content">
+                    <a href="/paginas/contribucion.html">¿Qué puedo hacer?</a>
+                    <a href="/paginas/timeline.html">Historia</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="titulo9">
+        <span class="numero-titul">9</span>
+        <h1>Industria, innovacion e <br />infraestructura</h1>
+        <img src="/image/ods9-logo.png" alt="Logo de la ods" class="logo-ods9" />
+    </div>
+
+    <div class="inf-ods">
+        <p>
+            El Objetivo 9 promueve infraestructuras resilientes, industrialización
+            sostenible e innovación, esenciales para el crecimiento económico, el
+            desarrollo social y la acción climática. <br />
+
+            <br />El Objetivo 9 promueve infraestructuras resilientes, industrialización
+            sostenible e innovación, esenciales para el crecimiento económico, el
+            desarrollo social y la acción climática.
+        </p>
+
+        <img src="/image/inf-ods.png" alt="concepto de la ods" class="inf-img" />
+    </div>
+
+    <img src="/image/imagen4.png" alt="plantitas" class="plant" />
+
+    <section class="cajita">
+        <div class="linea-superior"></div>
+        <span class="titulo">Datos</span>
+        <div class="linea-inferior"></div>
+        <div class="botonera">
+            <div class="boton boton-1"
+                data-info="2,3 mil millones|En todo el mundo, 2.300 millones de personas carecen de acceso a saneamiento básico y casi 800 millones de personas carecen de acceso a agua potable.|/image/img1.png">
+                2,3 <br> mil millones</div>
+            <div class="boton boton-2"
+                data-info="40%|40% En algunos países africanos de bajos ingresos, las limitaciones de infraestructura reducen la productividad de las empresas en alrededor del 40%.|/image/img2.jpg">
+                40%</div>
+            <div class="boton boton-3"
+                data-info="2,6 mil millones|2,6 mil millones de personas en países en desarrollo no tienen acceso permanente a electricidad.|/image/img3.jpg">
+                2,6 <br> mil millones</div>
+            <div class="boton boton-4"
+                data-info="90%|Más de 4 mil millones de personas aún no tienen acceso a internet. El 90% de ellos están en el mundo en desarrollo.|/image/img4.jpg">
+                90%</div>
+            <div class="boton boton-5"
+                data-info="2,3 millones|2,6 mil millones de personas en países en desarrollo no tienen acceso permanente a electricidad.|/image/img5.jpg">
+                2,3 <br> millones</div>
+        </div>
+        <div class="fondo-oscuro oculto"></div>
+
+    </section>
+
+    <div class="ventana-emergente oculto">
+        
+        <span class="texto-titulo"></span>
+        <p class="texto-descripcion"></p>
+        <img class="imagen" alt="Imagen relacionada">
+        <div class="boton-cerrar">Cerrar</div>
+    </div>
+
+    <div class="retosDesafios">
+        <h2>Retos y desafios</h2>
+    </div>
+    <hr />
+    <div class="retos">
+        <button onclick="openDialog('dialog1')" class="colorBox">
+            <h2>LOCAL</h2>
+            <p>
+                La falta de infraestructuras adecuadas, como acceso a Internet y
+                transporte, limita el crecimiento de las pequeñas y medianas empresas
+                (PYMEs) y los emprendedores.
+            </p>
+        </button>
+        <button onclick="openDialog('dialog2')" class="colorBox">
+            <h2>NACIONAL</h2>
+            <p>
+                En países en desarrollo, la industrialización es a menudo insostenible, lo
+                que resulta en altos niveles de contaminación y explotación de recursos
+                naturales.
+            </p>
+        </button>
+        <button onclick="openDialog('dialog3')" class="colorBox">
+            <h2>INTERNACIONAL</h2>
+            <p>
+                La desigualdad en la innovación tecnológica entre países desarrollados y
+                en desarrollo dificulta una industrialización equitativa, agravando la
+                brecha económica global.
+            </p>
+        </button>
+    </div>
+
+    <div class="retoLocal">
+        <dialog id="dialog1">
+            <p>
+                Falta de Infraestructura: Muchas regiones de Perú, especialmente en áreas
+                rurales, carecen de acceso adecuado a Internet y otras infraestructuras
+                necesarias para el desarrollo de pequeñas y medianas empresas (PYMEs).
+                Esto limita las oportunidades de negocios y el acceso a mercados más
+                amplios. <br />
+            </p>
+            <div style="display: flex; justify-content: center; margin: 20px 0">
+                <img src="/image/imagen5.jpg" alt="Acceso a internet"
+                    style="width: 40vh; max-width: 100%; height: auto" />
+            </div>
+            <p>
+                Acceso a Tecnología: La falta de formación y acceso a tecnologías modernas
+                limita la capacidad de las PYMEs y emprendedores para innovar y competir
+                en el mercado. El uso de herramientas digitales, como formularios en
+                línea, puede ser una forma de simplificar procesos y mejorar la
+                interacción con los clientes, pero requieren de una infraestructura
+                adecuada.
+            </p>
+            <div style="display: flex; justify-content: center">
+                <button class="zoombtn" onclick="closeDialog()">Cerrar</button>
+            </div>
+        </dialog>
+    </div>
+
+    <div class="retoNacional">
+        <dialog id="dialog2">
+            <p>
+                Industrialización Insostenible: La industrialización en Perú a menudo
+                enfrenta críticas por su impacto ambiental. La explotación excesiva de
+                recursos naturales y la falta de regulaciones adecuadas pueden llevar a
+                altos niveles de contaminación. Un enfoque sostenible en la industria,
+                apoyado por el uso de tecnologías limpias, es fundamental para el
+                desarrollo sostenible. <br />
+            </p>
+            <div style="display: flex; justify-content: center; margin: 20px 0">
+                <img src="/image/imagen6.jpg" alt="explotacion de recursos"
+                    style="width: 50vh; max-width: 100%; height: auto" />
+            </div>
+            <p>
+                Desigualdad en la Innovación: Existe una brecha significativa en la
+                capacidad de innovación entre diferentes sectores y regiones. Las áreas
+                urbanas tienden a tener más acceso a recursos y tecnologías que las
+                rurales, lo que crea disparidades en el desarrollo económico.
+            </p>
+            <div style="display: flex; justify-content: center">
+                <button class="zoombtn" onclick="closeDialog()">Cerrar</button>
+            </div>
+        </dialog>
+    </div>
+
+    <div class="retoInternacional">
+        <dialog id="dialog3">
+            <p>
+                Desigualdad Global: A nivel internacional, hay una clara desigualdad en el
+                acceso a la tecnología e innovación entre países desarrollados y en
+                desarrollo. Esto se traduce en un acceso desigual a las oportunidades de
+                industrialización, afectando la competitividad de países como Perú en el
+                mercado global. <br />
+            </p>
+            <div style="display: flex; justify-content: center; margin: 20px 0">
+                <img src="/image/imagen7.jpeg" alt="brecha digital" style="width: 40vh; max-width: 100%; height: auto" />
+            </div>
+            <p>
+                Colaboración Internacional: La falta de cooperación y transferencia de
+                tecnología entre países puede dificultar el desarrollo sostenible. Las
+                iniciativas de diálogo y colaboración, que podrían ser facilitadas a
+                través de plataformas digitales y formularios en línea, son esenciales
+                para cerrar la brecha de innovación.
+            </p>
+            <div style="display: flex; justify-content: center">
+                <button class="zoombtn" onclick="closeDialog()">Cerrar</button>
+            </div>
+        </dialog>
+    </div>
+
+    <div class="retosDesafios">
+        <h2>Indicadores clave para medir el progreso</h2>
+    </div>
+    <hr />
+
+    <div class="indicadores indicadoresGap animate__animated">
+        <button id="animacion" onclick="openDialog('dialog4')" class="conexionPeru">
+            <img src="/image/imagen8.png" alt="" />
+        </button>
+
+        <button onclick="openDialog('dialog5')" class="inversionesMundial">
+            <img src="/image/imagen9.png" alt="" />
+        </button>
+    </div>
+
+    <div class="Indicador1">
+        <dialog id="dialog4" class="dialogIndicadores">
+            <div class="dialog-header">Conectividad en Perú</div>
+            <div class="dialog-content">
+                <p>
+                    La meta de la ODS 9 de "Industria, Innovación e Infraestructura" aboga
+                    por una mayor conectividad y acceso tecnológico en todas las regiones
+                    del Perú. <br>
+
+                    Actualmente, <strong>el 57,6% de los hogares peruanos tiene conexión a
+                        Internet</strong>, lo cual refleja un progreso en el acceso a la tecnología,
+                    especialmente en áreas urbanas. <br>
+
+                    En <strong>Lima Metropolitana</strong>, la cifra asciende al <strong>77,5%</strong>,
+                    mientras que en otras <strong>áreas urbanas es del 61,3%. </strong> <br>
+
+                    Sin embargo, aún persiste una marcada brecha en zonas rurales, donde solo el 18,1% de
+                    los hogares está conectado. <br>
+
+                    Estos indicadores evidencian el camino que falta por recorrer para asegurar
+                    una infraestructura digital inclusiva que permita a todos los peruanos
+                    participar de manera equitativa en la economía digital y en el desarrollo
+                    sostenible, en línea con los objetivos de la ODS 9.
+                </p>
+            </div>
+            <div class="dialog-footer" style="display: flex; justify-content: flex-end; margin:auto;">
+                <button class="zoombtn" onclick="closeDialog()">Cerrar</button>
+            </div>
+        </dialog>
+    </div>
+
+
+    <div class="Indicador2">
+        <dialog id="dialog5" class="dialogIndicadores">
+            <div class="dialog-header dialog-headerColor">Inversión en Energías Limpias y su Contribución a la ODS 9
+            </div>
+            <div class="dialog-content">
+                <p>
+                    La inversión en energías limpias es fundamental para avanzar hacia la ODS 9, que promueve la
+                    "Industria,
+                    Innovación e Infraestructura". En este contexto, los principales países que destacan son China,
+                    Estados Unidos,
+                    Alemania y la UE-27, quienes han hecho significativas aportaciones. <br>
+
+                <ul>
+                    <li><strong>China</strong>, con una inversión total de 676 millones de dólares, lidera en esta área.
+                        Destina 290 millones a electrificación del transporte y 280 millones a energías renovables,
+                        mostrando
+                        un fuerte compromiso con la sostenibilidad y el desarrollo de infraestructuras avanzadas. <br>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <strong>Estados Unidos</strong> sigue, con 303 millones en total, enfocados en energías
+                        renovables
+                        y transporte electrificado, con 90 millones dedicados a energías renovables. Esta
+                        diversificación
+                        subraya la importancia de una infraestructura energética eficiente. <br>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <strong>Alemania</strong>, con una inversión de 95 millones, prioriza la energía renovable y el
+                        transporte electrificado, contribuyendo a la meta de un futuro más sostenible. Por su parte, la
+                        UE-27 y el resto del mundo, que invierten 618 millones, enfatizan la necesidad de una
+                        infraestructura
+                        energética interconectada y resiliente. <br>
+                    </li>
+                </ul>
+
+
+                Estas inversiones no solo buscan mejorar la infraestructura física, sino que también son esenciales para
+                garantizar el acceso equitativo a tecnologías sostenibles. Al fortalecer la infraestructura energética,
+                estos
+                países
+                contribuyen a crear un entorno propicio para la innovación, el crecimiento económico y un desarrollo
+                social
+                sostenible. <br>
+                </p>
+            </div>
+            <div class="dialog-footer" style="display: flex; justify-content: flex-end; margin:auto;">
+                <button class="zoombtn" onclick="closeDialog()">Cerrar</button>
+            </div>
+    </div>
+
+    <div class="retos_principal">
+        <div class="retos_desafíos">
+            <div class="metas-objetivo">
+                <h2>Proyectos exitosos a nivel nacional y mundial</h2>
+            </div>
+            <ul class="lista-centrada">
+                <li class="item-lista" data-imagen="imagen1">
+                    <div class="texto-reto">
+                        <strong>Proyecto "Puente Modular en la Selva Amazónica":</strong>
+                        <p>Este proyecto en la región amazónica del Perú ha sido fundamental para mejorar la
+                            conectividad de comunidades remotas, permitiéndoles acceder a servicios básicos, mercados y
+                            educación. Mediante el uso de materiales sostenibles y métodos de construcción de bajo
+                            impacto, el puente ha mejorado significativamente la economía local y la accesibilidad.</p>
+                    </div>
+                </li>
+
+                <li class="item-lista" data-imagen="imagen2">
+                    <div class="texto-reto">
+                        <strong>Iniciativa "Innovate Perú":</strong>
+                        <p>Innovate Perú promueve la investigación y el desarrollo en tecnología e innovación en el
+                            sector privado y académico. Este programa apoya a startups y emprendedores, además de
+                            ofrecer financiamiento a proyectos que desarrollan soluciones en sectores como agricultura,
+                            salud y energía sostenible.</p>
+                    </div>
+                </li>
+
+                <li class="item-lista" data-imagen="imagen3">
+                    <div class="texto-reto">
+                        <strong>Masdar City - Abu Dhabi, Emiratos Árabes Unidos":</strong>
+                        <p>Masdar City es un proyecto de ciudad ecológica en Abu Dhabi que busca ser un modelo de
+                            sostenibilidad y
+                            tecnología limpia. La ciudad utiliza energía solar y otros recursos renovables para operar,
+                            y está diseñada
+                            para tener bajas emisiones de carbono.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="imagenes-reto">
+            <div class="imagen_reto" id="imagen1" style="display:none;">
+                <img src="/image/imagen10.jpg" alt="Proyecto Puente Modular" class="imagen-reto">
+            </div>
+            <div class="imagen_reto" id="imagen2" style="display:none;">
+                <img src="/image/imagen11.jpg" alt="Iniciativa Innovate Perú" class="imagen-reto">
+            </div>
+            <div class="imagen_reto" id="imagen3" style="display:none;">
+                <img src="/image/imagen12.png" alt="Iniciativa Innovate Perú" class="imagen-reto">
+            </div>
+        </div>
+    </div>
+
+    <div class="retosDesafios">
+        <h2>Acciones individuales y colectivas para apoyar al ODS9</h2>
+    </div>
+    <hr />
+
+    <section class="image-section">
+        <div class="image-group">
+            <div class="image-container">
+                <img src="/image/accionIndividual1.jpg" alt="Imagen 1" class="normal">
+                <img src="/image/Group13.png" alt="Imagen 1 Hover" class="hover">
+            </div>
+            <div class="image-container">
+                <img src="/image/accionIndividual2.jpg" alt="Imagen 2" class="normal">
+                <img src="/image/Group14.png" alt="Imagen 2 Hover" class="hover">
+            </div>
+        </div>
+
+        <div class="image-group">
+            <div class="image-container">
+                <img src="/image/accionColectiva1.jpg" alt="Imagen 3" class="normal">
+                <img src="/image/Group15.png" alt="Imagen 3 Hover" class="hover">
+            </div>
+            <div class="image-container">
+                <img src="/image/accionColectiva2.jpg" alt="Imagen 4" class="normal">
+                <img src="/image/Group12.png" alt="Imagen 4 Hover" class="hover">
+            </div>
+            <div class="image-container">
+                <img src="/image/accionColectiva3.jpg" alt="Imagen 5" class="normal">
+                <img src="/image/Group16.png" alt="Imagen 5 Hover" class="hover">
+            </div>
+        </div>
+    </section>
+
+    <div class="caja-footer">
+        <div class="logo-nombre">
+          <a href="/" class="logo">
+            <img src="/image/logo.png" alt="Logotipo VentaFlow">
+            <span class="nombre-logo">ByteCrafters</span>
+          </a>
+        </div>
+        <nav class="navegacion">
+          <a href="/Nosotros/nosotros.html">Nosotros</a>
+          <a href="/Noticias/noticias.html">Noticias</a>
+          <a href="producto.html">Producto</a>
+          <a href="soporte">Soporte</a>
+          <a href="/que-puedo-hacer/contribucion.html">¿Qué puedo hacer?</a>
+        </nav>
+        <div class="contacto">
+          <span class="red">TikTok</span>
+          <span class="correo">correo1@ventaflow.com</span>
+          <span class="correo">correo2@ventaflow.com</span>
+          <span class="correo">correo3@ventaflow.com</span>
+        </div>
+      </div>
+
+    <script src="/js/dialogos.js"></script>
+    <script src="/js/op-ventanas.js"></script>
+    <script src="/js/botones.js"></script>
+</body>
+
+</html>

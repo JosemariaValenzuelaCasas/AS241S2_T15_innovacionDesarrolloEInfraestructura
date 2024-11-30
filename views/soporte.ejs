@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/soporte.css">
+    <link rel="stylesheet" href="/css/navegacion-estilos.css">
+    <link rel="stylesheet" href="/css/faq.css">
+</head>
+
+<body>
+    <div class="caja-header">
+        <a href="/" class="logo">
+            <img src="/image/logo.png" alt="Logotipo VentaFlow">
+            <span class="nombre-logo">ByteCrafters</span>
+        </a>
+        <nav class="menu">
+            <a href="/paginas/nosotros.html">Nosotros</a>
+            <a href="/paginas/noticias.html">Noticias</a>
+            <a href="producto.html">Producto</a>
+            <a href="soporte">Soporte</a>
+
+            <!-- Menú desplegable -->
+            <div class="dropdown">
+                <span class="dropdown-btn">Ayuda a los ODS</span>
+                <div class="dropdown-content">
+                    <a href="/paginas/contribucion.html">¿Qué puedo hacer?</a>
+                    <a href="/paginas/timeline.html">Historia</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="seccion-1">
+        <main>
+            <form id="myForm">
+                <div class="formulario">
+                    <h2>Contacto</h2>
+                    <div class="input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+
+                        <label for="phone">Telefono</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                        <input class="btn" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <script src="/js/validaciones.js"></script>
+
+        <div class="texto-1">
+            <h1>¡Contáctate con Nosotros!</h1>
+            <p>¡Estamos aquí para ayudar! Con solo un poco de información podremos responder tu consulta.</p>
+        </div>
+    </section>
+
+    <section class="faq-container">
+        <h1>Preguntas Frecuentes</h1>
+        <% preguntasTop.forEach(pregunta=> { %>
+            <div class="faq-card" onclick="toggleAnswer(this)">
+                <div class="faq-question">
+                    <%= pregunta.mainPregunta %>
+                </div>
+                <div class="faq-answer">
+                    <%= pregunta.respuesta %>
+                </div>
+            </div>
+            <% }) %>
+    </section>
+
+    <div class="caja-footer">
+        <div class="logo-nombre">
+          <a href="/" class="logo">
+            <img src="/image/logo.png" alt="Logotipo VentaFlow">
+            <span class="nombre-logo">ByteCrafters</span>
+          </a>
+        </div>
+        <nav class="navegacion">
+          <a href="/Nosotros/nosotros.html">Nosotros</a>
+          <a href="/Noticias/noticias.html">Noticias</a>
+          <a href="producto.html">Producto</a>
+          <a href="soporte">Soporte</a>
+          <a href="/que-puedo-hacer/contribucion.html">¿Qué puedo hacer?</a>
+        </nav>
+        <div class="contacto">
+          <span class="red">TikTok</span>
+          <span class="correo">jose.valenzuela.casas@vallegrande.edu.pe</span>
+          <span class="correo">correo2@ventaflow.com</span>
+          <span class="correo">correo3@ventaflow.com</span>
+        </div>
+      </div>
+    <script src="../js/formulario.js"></script>
+    <script src="../js/faq.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+/* Sección que contiene todo el contenido */
+.ods-section {
+    overflow: hidden; /* Evita que el contenido se desborde de la sección */
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Contenedor del círculo */
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/* Círculo animado */
+.circle {
+    position: relative;
+    width: 10px;
+    height: 800px;
+    border-radius: 50%;
+    animation: rotate 100s infinite linear;
+}
+
+/* Imagen central dentro del círculo */
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+/* Contenedor de las imágenes de los ODS */
+.ods-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo de cada imagen de ODS */
+.ods-image {
+    position: absolute;
+    width: 6vw;
+    height:6vw;
+    transition: opacity 0.3s;
+}
+
+/* Aumento de la separación y rotación de las imágenes de ODS */
+.ods-image:nth-child(1) { transform: rotate(0deg) translateX(20vw); }
+    .ods-image:nth-child(2) { transform: rotate(21.2deg) translateX(20vw); }
+    .ods-image:nth-child(3) { transform: rotate(42.4deg) translateX(20vw); }
+    .ods-image:nth-child(4) { transform: rotate(63.6deg) translateX(20vw); }
+    .ods-image:nth-child(5) { transform: rotate(84.8deg) translateX(20vw); }
+    .ods-image:nth-child(6) { transform: rotate(106deg) translateX(20vw); }
+    .ods-image:nth-child(7) { transform: rotate(127.2deg) translateX(20vw); }
+    .ods-image:nth-child(8) { transform: rotate(148.4deg) translateX(20vw); }
+    .ods-image:nth-child(9) { transform: rotate(169.6deg) translateX(20vw); }
+    .ods-image:nth-child(10) { transform: rotate(190.8deg) translateX(20vw); }
+    .ods-image:nth-child(11) { transform: rotate(212deg) translateX(20vw); }
+    .ods-image:nth-child(12) { transform: rotate(233.2deg) translateX(20vw); }
+    .ods-image:nth-child(13) { transform: rotate(254.4deg) translateX(20vw); }
+    .ods-image:nth-child(14) { transform: rotate(275.6deg) translateX(20vw); }
+    .ods-image:nth-child(15) { transform: rotate(296.8deg) translateX(20vw); }
+    .ods-image:nth-child(16) { transform: rotate(318deg) translateX(20vw); }
+    .ods-image:nth-child(17) { transform: rotate(339.2deg) translateX(20vw); }
+
+
+/* Animación de rotación infinita */
+@keyframes rotate {
+    0% { transform: rotate(0deg); } /* Comienza desde 0 grados */
+    100% { transform: rotate(-360deg); } /* Rota hasta -360 grados (un giro completo) */
+}
+
+/* Contenedor de texto junto al círculo */
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 40%;
+}
+
+/* Estilo del texto de ODS */
+#ods-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .circle-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .circle {
+        width: 8px;
+        height: 600px;
+    }
+
+    .center-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-container {
+        margin-left: 0;
+        width: 80%;
+        margin-top: 20px; /* Añade un margen superior */
+    }
+    .ods-image:nth-child(1) { transform: rotate(0deg) translateX(45vw); }
+    .ods-image:nth-child(2) { transform: rotate(21.2deg) translateX(45vw); }
+    .ods-image:nth-child(3) { transform: rotate(42.4deg) translateX(45vw); }
+    .ods-image:nth-child(4) { transform: rotate(63.6deg) translateX(45vw); }
+    .ods-image:nth-child(5) { transform: rotate(84.8deg) translateX(45vw); }
+    .ods-image:nth-child(6) { transform: rotate(106deg) translateX(45vw); }
+    .ods-image:nth-child(7) { transform: rotate(127.2deg) translateX(45vw); }
+    .ods-image:nth-child(8) { transform: rotate(148.4deg) translateX(45vw); }
+    .ods-image:nth-child(9) { transform: rotate(169.6deg) translateX(45vw); }
+    .ods-image:nth-child(10) { transform: rotate(190.8deg) translateX(45vw); }
+    .ods-image:nth-child(11) { transform: rotate(212deg) translateX(45vw); }
+    .ods-image:nth-child(12) { transform: rotate(233.2deg) translateX(45vw); }
+    .ods-image:nth-child(13) { transform: rotate(254.4deg) translateX(45vw); }
+    .ods-image:nth-child(14) { transform: rotate(275.6deg) translateX(45vw); }
+    .ods-image:nth-child(15) { transform: rotate(296.8deg) translateX(45vw); }
+    .ods-image:nth-child(16) { transform: rotate(318deg) translateX(45vw); }
+    .ods-image:nth-child(17) { transform: rotate(339.2deg) translateX(45vw); }
+}
+
+/* Responsividad para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Añade espacio alrededor de la sección */
+    }
+
+    .circle-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle {
+        width: 6px;
+        height: 500px;
+    }
+
+    .center-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-container {
+        width: 90%;
+        margin-top: 15px; /* Añade un margen superior */
+    }
+
+    .ods-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ods-image:nth-child(1) { transform: rotate(0deg) translateX(45vw); }
+    .ods-image:nth-child(2) { transform: rotate(21.2deg) translateX(45vw); }
+    .ods-image:nth-child(3) { transform: rotate(42.4deg) translateX(45vw); }
+    .ods-image:nth-child(4) { transform: rotate(63.6deg) translateX(45vw); }
+    .ods-image:nth-child(5) { transform: rotate(84.8deg) translateX(45vw); }
+    .ods-image:nth-child(6) { transform: rotate(106deg) translateX(45vw); }
+    .ods-image:nth-child(7) { transform: rotate(127.2deg) translateX(45vw); }
+    .ods-image:nth-child(8) { transform: rotate(148.4deg) translateX(45vw); }
+    .ods-image:nth-child(9) { transform: rotate(169.6deg) translateX(45vw); }
+    .ods-image:nth-child(10) { transform: rotate(190.8deg) translateX(45vw); }
+    .ods-image:nth-child(11) { transform: rotate(212deg) translateX(45vw); }
+    .ods-image:nth-child(12) { transform: rotate(233.2deg) translateX(45vw); }
+    .ods-image:nth-child(13) { transform: rotate(254.4deg) translateX(45vw); }
+    .ods-image:nth-child(14) { transform: rotate(275.6deg) translateX(45vw); }
+    .ods-image:nth-child(15) { transform: rotate(296.8deg) translateX(45vw); }
+    .ods-image:nth-child(16) { transform: rotate(318deg) translateX(45vw); }
+    .ods-image:nth-child(17) { transform: rotate(339.2deg) translateX(45vw); }
+}

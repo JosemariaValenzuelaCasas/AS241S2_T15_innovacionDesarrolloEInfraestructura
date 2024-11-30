@@ -1,0 +1,476 @@
+/* Estilo general del body */
+html, body {
+  font-family: "Poppins", sans-serif; /* Fuente utilizada para el texto */
+  font-weight: 500; /* Grosor de la fuente */
+  font-style: normal;
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina relleno predeterminado */
+  width: 100vw; /* 100% del ancho del viewport */
+  ; /* 100% de la altura del viewport */
+  overflow-x: hidden; /* Evita el scroll horizontal no deseado */
+  box-sizing: border-box; 
+  background-color: #000; /* Fondo de color negro */
+  color: #fff; /* Color de texto blanco */
+  display: flex; /* Se utiliza flexbox para el diseño */
+  flex-direction: column; /* Incluye bordes y padding en el cálculo del ancho y la altura */
+}
+
+/* Sección 1: Fondo de imagen */
+.fondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/image/gif.gif); /* Establece la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  height: 100vh; /* Establece la altura a toda la ventana del navegador */
+  display: flex; /* Usa Flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  animation: fadeIn 5s ease 1s;
+  animation-fill-mode: forwards;
+  margin-top: 50px;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Al principio, el elemento está completamente invisible */
+  }
+  100% {
+      opacity: 1; /* Al final, el elemento es completamente visible */
+  }
+}
+
+.titulods {
+  font-family: Arial, sans-serif; /* Establece la fuente del texto */
+  font-size: clamp(30px, 3vw, 150px);; /* Tamaño de la fuente */
+  color: white; /* Color del texto */
+  text-align: center; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Asegura que el texto no se desborde */
+  border-right: 3px solid white; /* Simula un cursor de máquina de escribir */
+  padding-right: 10px; /* Espacio al lado derecho del texto */
+}
+
+/* Estilo del menú desplegable de ODS */
+.menu-desplegable-ods {
+  display: flex; /* Se utiliza flexbox para el diseño del menú */
+  justify-content: space-between; /* Los elementos se distribuyen con espacio entre ellos */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: #000000; /* Fondo negro */
+  padding: 15px; /* Espaciado interno de 15px */
+  border-radius: 8px; /* Bordes redondeados de 8px */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de caja suave */
+  margin: 0; /* Elimina el margen */
+  transition: position 0.3s ease; /* Transición suave cuando cambia la posición */
+}
+
+/* Estilo para el texto del menú izquierdo */
+.menu-izquierdo {
+  font-size: 20px; /* Tamaño de la fuente */
+  font-weight: bold; /* Fuente en negrita */
+  color: #ffffff; /* Color del texto en gris oscuro */
+}
+
+/* Estilo para las opciones del menú desplegable derecho */
+.menu-derecho .desplegable-objetivos {
+  padding: 10px; /* Espaciado interno de 10px */
+  width: 90%;
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ffffff; /* Borde de 1px de color gris claro */
+  border-radius: 8px; /* Bordes redondeados de 8px */
+  background-color: #4d4242; /* Fondo negro */
+  color: #ffffff; /* Texto en blanco */
+  cursor: pointer; /* Cambia el cursor a mano para indicar interactividad */
+}
+
+/* Estilo para el panel derecho que está fijo */
+.panel-derecho {
+  position: fixed; /* El panel se fija en la pantalla */
+  top: 0; /* Posición en la parte superior */
+  right: 0; /* Posición en el lado derecho */
+  width: 80%; /* El panel ocupa el 80% del ancho de la pantalla */
+  height: 100%; /* El panel ocupa todo el alto de la pantalla */
+  background-color: #fffafa; /* Fondo negro */
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); /* Sombra en el lado izquierdo del panel */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede el alto del panel */
+  z-index: 1000; /* Asegura que el panel esté por encima de otros elementos */
+  transition: transform 3.7s ease; /* Transición suave para mostrar/ocultar el panel */
+  transform: translateX(100%); /* Inicialmente, el panel está oculto, desplazado a la derecha */
+}
+
+/* Estilo para mostrar el panel cuando tiene la clase 'visible' */
+.panel-derecho.visible {
+  transform: translateX(0); /* El panel se muestra desplazándose desde la derecha */
+}
+
+/* Estilo para el botón de cierre del panel */
+.cerrar-panel {
+  position: absolute; /* Posición absoluta dentro del panel */
+  top: 10px; /* Distancia de 10px desde el borde superior */
+  right: 10px; /* Distancia de 10px desde el borde derecho */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 18px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a mano */
+}
+
+/* Estilo para elementos ocultos */
+.oculto {
+  display: none; /* El elemento no se muestra */
+}
+
+.sticky {
+  position: fixed; /* Fija el menú en la parte superior */
+  top: 0; /* Posición en la parte superior de la pantalla */
+  left: 0; /* Ajusta para que el menú ocupe toda la pantalla */
+  width: 100%; /* Asegura que el menú sea del ancho completo */
+  z-index: 1000; /* Mantiene el menú por encima de otros elementos */
+}
+
+
+/* Estilos para la Sección 3: Información sobre los ODS */
+.info-ods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.contenedor-ods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el contenedor de contenido y la imagen */
+.texto-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  background-color: #777171; /* Cuadrado gris */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contenido {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  flex: 1;
+}
+
+.imagen-ods {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen-ods img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+/* Fondo general para la sección */
+.seccion-ods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  height: 100vh;
+  transition: background 0.5s ease-in-out;
+  margin-top: 100px; /* Transición suave al cambiar el fondo */
+} 
+
+.textos-ods { 
+  width: 45%; /* Establece el ancho al 45% del contenedor principal */
+  padding: 20px; /* Agrega un relleno interno de 20px */
+  background-color: rgba(117, 112, 112, 0.8); /* Aplica un fondo blanco semitransparente */
+  border-radius: 10px; /* Redondea las esquinas del contenedor */
+  color: #ffffff;
+  position: relative; /* Esto asegura que la sección textos-ods no se vea afectada por los cambios globales de fondo */
+  z-index: 2;
+  margin-bottom: 17vh;
+  font-size: clamp(10px, 0.9vw, 150px);
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin-right: 25px;
+}
+
+.textos-ods h4{
+  font-size: 30px;
+}
+/* Estilo base para cada texto dentro de los ODS */
+.texto-item { 
+  display: none; /* Oculta el texto por defecto */
+}
+
+/* Muestra el texto activo */
+.texto-item.activo { 
+  display: block; /* Hace visible el texto marcado como activo */
+}
+
+/* Fondo predeterminado */
+.fondo-predeterminado {
+  background: url(../image/fondoOds/fondoDEF.jpeg) no-repeat center center/cover;}
+.fondo-ods1 {
+  background: url(../image/fondoOds/fondoODS1.png) no-repeat center center/cover;}
+.fondo-ods2 {
+  background: url(https://es.wfp.org/sites/default/files/styles/large/public/2020-11/migrated-story-hero-images/1*MUBy0B6FXQJTkAD0tsDooQ.jpeg?itok=lq_YaLqB) no-repeat center center/cover;}
+.fondo-ods3 {
+  background: url(https://png.pngtree.com/png-clipart/20230921/original/pngtree-living-healthy-lifestyle-and-eating-concept-fresh-doodle-cartoon-vector-png-image_12505776.png) no-repeat center center/cover;}
+.fondo-ods4 {
+  background: url(../image/fondoOds/fondoODS4.jpg) no-repeat center center/cover;}
+.fondo-ods5 {
+  background: url(../image/fondoOds/fondoODS5.jpg) no-repeat center center/cover;}
+.fondo-ods6 {
+  background: url(../image/fondoOds/fondoODS6.jpg) no-repeat center center/cover;}
+.fondo-ods7 {
+  background: url(../image/fondoOds/fondoODS7.jpeg) no-repeat center center/cover;}
+.fondo-ods8 {
+  background: url(../image/fondoOds/fondoODS8.jpg) no-repeat center center/cover;}
+.fondo-ods9 {
+  background: url(https://contactomaestro.colombiaaprende.edu.co/sites/default/files/maestrospublic/styles/interna_850x260/public/2020-05/CONTACTO_6.png?h=aeae0952&itok=FkDaqEbD) no-repeat center center/cover;}
+
+
+.fondo-ods10 {
+  background: url(../image/fondoOds/fondoODS10.jpg) no-repeat center center/cover;}
+.fondo-ods11 {
+  background: url(https://www.sustantperu.com/images/Parque.png) no-repeat center center/cover;}
+.fondo-ods12 {
+  background: url(../image/fondoOds/fondoODS12.jpg) no-repeat center center/cover;}
+.fondo-ods13 {
+  background: url(../image/fondoOds/fondoODS13.png) no-repeat center center/cover;}
+.fondo-ods14 {
+  background: url(../image/fondoOds/fondoODS14.jpg) no-repeat center center/cover;}
+.fondo-ods15 {
+  background: url(../image/fondoOds/fondoODS15.jpg) no-repeat center center/cover;}
+.fondo-ods16 {
+  background: url(../image/fondoOds/fondoODS16.png) no-repeat center center/cover;}
+.fondo-ods17 {
+  background: url(../image/fondoOds/fondoODS17.jpg) no-repeat center/cover;}
+
+.fondo-opaco::after {
+    content: ""; /* Necesario para que aparezca */
+    position: absolute; /* Posiciona el pseudo-elemento sobre el fondo */
+    top: 0; left: 0; right: 0; bottom: 0; /* Asegura que cubra todo el elemento */
+    background-color: rgba(0, 0, 0, 0.5); /* Aplica un color negro con opacidad (puedes ajustar el valor de 0.5) */
+    z-index: 1; /* Asegura que el pseudo-elemento quede encima del fondo */
+}
+
+.fondo-opaco > * {
+  position: relative; /* Asegura que los elementos hijos estén por encima del pseudo-elemento */
+  z-index: 2;
+}
+
+.imagen-dinamica { 
+  position: absolute; /* Posiciona la imagen de manera absoluta dentro del contenedor */
+  bottom: 20px; /* Fija la posición a 20px desde la parte inferior */
+  right: 10px; /* Fija la posición a 10px desde la parte derecha */
+  width: 100px; /* Establece el ancho en 100px */
+  height: 100px; /* Establece la altura en 100px */
+  border-radius: 10px; /* Redondea las esquinas de la imagen */
+  transition: opacity 0.3s, transform 0.3s; /* Aplica una transición suave a la opacidad y la transformación */
+}
+
+.imagenSticker{
+  position: absolute;
+  max-width: 150px;
+  right: 15px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.imagenSticker img{ 
+  min-width: 150px;
+  height: auto; 
+  max-width: 150px;
+}
+/* Contenedor para las imágenes de los ODS */
+.imagenes-ods { 
+  display: grid; /* Define un diseño de cuadrícula para los elementos hijos */
+  grid-template-columns:  repeat(auto-fill, minmax(12vw, 1fr));;/* Crea 4 columnas de igual ancho */
+  gap: 11px; /* Establece un espacio de 10px entre las columnas y filas */
+  min-width:  45%; /* Limita el ancho total al 10% del contenedor */
+}
+
+/* Elemento individual que representa un ODS */
+.ods-item img{ 
+  width: 8vw; /* Establece el ancho de cada elemento en 80px */
+  height: 8vw; /* Establece la altura de cada elemento en 80px */
+  background-size: cover; /* Ajusta el tamaño de fondo para cubrir todo el elemento */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el elemento */
+  transition: transform 0.3s ease; /* Agrega una transición suave para transformaciones */
+}
+
+/* Efecto al pasar el cursor sobre un ODS */
+.ods-item img:hover { 
+  transform: scale(1.1); /* Aumenta el tamaño del elemento en un 10% */
+}
+
+.separador{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+
+.gif{
+  position: absolute;
+  width: 160px;
+  animation: moveLeftToRight 10s linear infinite;
+  z-index: 500;
+  bottom: 0;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+      left: -85%; /* Comienza fuera de la pantalla por la izquierda */
+  }
+  100% {
+      left: 100%; /* Termina fuera de la pantalla por la derecha */
+  }
+}
+/*REDIRECCIONAMIENTO PAGINA ODS9*/
+/* Contenedor que cubre todo el viewport */
+.ods9-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/image/ods9CONTAINER.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1000; /* Asegúrate de que este contenedor esté por encima de otros elementos */
+  text-align: center;
+}
+
+/* Estilo para el contenido dentro del contenedor */
+.ods9-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  width: 400px; /* Puedes ajustar el tamaño */
+}
+
+.ods9-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.ods9-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.explore-link {
+  font-size: 1.1em;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Puedes cambiar el color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.explore-link:hover {
+  background-color: #0056b3;
+}
+
+/* Imagen predeterminada */
+.predeterminado {
+  background-image: url(/index/fondo-ODS/fondo0.jpg);
+}
+
+@media (max-width: 900px) {
+  
+  .textos-ods{
+    width: 90%;
+    margin-right: 0;
+    padding: 5px;
+    overflow: auto;
+  }
+
+  .textos-ods h4{
+    font-size: 15px;
+  }
+
+  .imagenSticker img{
+    min-width: 100px;
+    height: auto;
+    max-width: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .seccion-ods{
+    flex-direction: column;
+    align-items: center;
+  }
+  .textos-ods{
+    width: 90%;
+    margin-right: 0;
+    padding: 5px;
+    overflow: auto;
+  }
+
+  .textos-ods h4{
+    font-size: 15px;
+  }
+}
+@media (max-width: 431px) {
+  .ods-item img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .seccion-ods{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textos-ods{
+    width: 90%;
+    margin-right: 0;
+    padding: 5px;
+    overflow: auto;
+  }
+
+  .imagenes-ods{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 481px) {
+  .ods-item img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .textos-ods h4{
+    font-size: 10px;
+  }
+}
+
+

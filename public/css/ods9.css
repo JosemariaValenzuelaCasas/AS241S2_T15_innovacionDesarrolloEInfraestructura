@@ -1,0 +1,691 @@
+body {
+    margin: 0;
+    padding: 30;
+}
+s #panel-contenido {
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+
+.numero-titul {
+    font-size: 70px;
+}
+
+.h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-left: 20%;
+}
+
+.logo-ods9 {
+    margin-left: auto;
+    height: 80px;
+    margin-right: 30px;
+}
+
+.inf-ods {
+    display: flex;
+    gap: 10px;
+    background-color: #fd6925;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+.inf-ods img {
+    max-width: 40%;
+    height: auto;
+}
+
+.inf-ods p {
+    font-size: 22px;
+    padding: 3%;
+    color: white;
+}
+
+
+
+hr {
+    margin: 1%;
+    margin-top: 0;
+}
+
+.retosDesafios {
+    margin: 2%; /* Márgenes alrededor */
+    padding: 10px;
+}
+
+.datos {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    margin: 8vh;
+}
+
+.datos span {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.datos button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    border: none;
+    background-color: white;
+}
+
+.classUp {
+    background-color: black;
+    padding: 5%;
+}
+
+.datos p {
+    color: white;
+}
+
+.dato img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.retos,
+.indicadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.indicadoresGap {
+    gap: 18vw;
+}
+
+.retos button {
+    border: none;
+    padding: 10px;
+    width: 25vw;
+    background-color: #00325c;
+    border-radius: 20px;
+    color: white;
+}
+
+.conexionPeru,
+.inversionesMundial {
+    border: none;
+    padding: 10px;
+    width: 25vw;
+    background-color: #ffb685;
+    border-radius: 20px;
+    color: white;
+}
+
+.conexionPeru button,
+.inversionesMundial button {
+    width: 80%;
+    max-width: 600px;
+}
+
+.conexionPeru img,
+.inversionesMundial img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.zoombtn {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 1em;
+}
+
+.zoombtn:hover {
+    background-color: #fd6925;
+    color: white;
+}
+
+dialog {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.dialogIndicadores {
+    width: 80%;
+    max-width: 500px;
+    padding: 0px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogIndicadores::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-header {
+    background-color: #ff7a00;
+    color: white;
+    padding: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.dialog-content {
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.dialog-footer button {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.dialog-footer button:hover {
+    background-color: #e06600;
+}
+
+span {
+    margin-right: 5px;
+}
+
+.conexionPeru .animate__animated .animate__slideInLeft {
+    animation-delay: 5s;
+}
+
+
+
+.lista-centrada {
+    padding: 10px;
+    /* Espaciado interno para la lista */
+}
+
+.titulo9 { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fd6925;
+    margin-left: 80px; /* Aumentar margen izquierdo */
+    margin-right: 80px; /* Aumentar margen derecho */
+    padding: 0 60px; /* Aumentar relleno a los lados */
+}
+
+.plant {
+    max-width: 35%;
+    height: auto;
+    margin: 0 60px; /* Aumentar margen a los lados */
+}
+
+.retosDesafios {
+    margin: 4%; /* Aumentar márgenes alrededor */
+    padding: 20px; /* Aumentar relleno */
+    margin-left: 40px; /* Alejar más del borde izquierdo */
+    margin-right: 40px; /* Alejar más del borde derecho */
+}
+
+.retos_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px; /* Aumentar el espacio entre los contenedores */
+    margin-left: 40px; /* Alejar más del borde izquierdo */
+    margin-right: 40px; /* Alejar más del borde derecho */
+}
+
+.retos_desafíos {
+    width: 48%;
+    margin-left: 4%; /* Aumentar margen izquierdo */
+}
+
+.item-lista {
+    transition: transform 0.3s ease;
+    padding: 20px; /* Aumentar relleno */
+    border: 1px solid transparent;
+    position: relative;
+    color: #333;
+    margin-left: 20px; /* Aumentar margen izquierdo */
+    margin-right: 20px; /* Aumentar margen derecho */
+}
+
+
+.imagen_reto{
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_reto img{
+    display: flex;
+}
+.imagen-reto {
+    width: 60%;
+    /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
+    margin-top: 30%;
+    
+}
+
+.item-lista:hover {
+    transform: scale(1.05);
+    /* Escala al 105% */
+    border-color: #ccc;
+    /* Cambia el borde al pasar el cursor */
+}
+
+.metas-objetivo{
+    color: #333;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    margin-bottom: 5%;
+}
+
+.image-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 350px; /* Ajusta el tamaño según tus necesidades */
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container .hover {
+    opacity: 0;
+}
+
+.image-container:hover .normal {
+    opacity: 0;
+}
+
+.image-container:hover .hover {
+    opacity: 1;
+}
+
+.cajita {
+    text-align: center;/* Centra el texto dentro de la caja */
+    margin: 20px;/* Añade un margen de 20px alrededor de la caja */
+}
+
+/* Líneas horizontales (superior e inferior) */
+.linea-superior,
+.linea-inferior {
+    height: 2px;/* Establece el alto de la línea */
+    background-color: black;/* Color negro para la línea */
+    margin: 10px auto;/* Márgenes de 10px arriba y abajo, y centrado en el eje horizontal */
+    width: 80%;/* Establece el ancho de la línea al 80% */
+}
+
+/* Estilo del título */
+.titulo {
+    display: block;/* Asegura que el título se comporte como un bloque */
+    font-size: 24px;/* Establece el tamaño de la fuente */
+    font-weight: bold;/* Hace el texto en negrita */
+    margin: 20px 0;/* Márgenes de 20px arriba y abajo */
+}
+
+/* Contenedor de los botones (botonera) con alineación en fila */
+.botonera {
+    display: flex;/* Usa un diseño flexible (flexbox) */
+    justify-content: center;/* Centra los botones en el eje horizontal */
+    gap: 30px;/* Espacio de 10px entre los botones */
+    margin-top: 20px;/* Añade margen superior de 20px */
+}
+
+/* Estilos de los botones */
+.boton {
+    background-color: black;/* Color de fondo negro */
+    color: white;/* Color del texto blanco */
+    padding: 10px 25px;/* Añade padding de 10px arriba y abajo, 15px a los lados */
+    font-size: 16px;/* Establece el tamaño de la fuente */
+    cursor: pointer;/* Cambia el cursor a un puntero al pasar sobre el botón */
+    border-radius: 5px;/* Bordes redondeados con un radio de 5px */
+    transition: all 0.3s ease;/* Transición suave para todos los cambios */
+}
+
+/* Estilo para el botón activo (cuando es clickeado) */
+.boton.activo {
+    background-color: orange;/* Cambia el fondo a color naranja */
+    transform: scale(1.2);/* Aumenta el tamaño del botón */
+}
+
+/* Fondo oscuro detrás de la ventana emergente (por defecto oculto) */
+.fondo-oscuro {
+    position: fixed;/* Fija la posición respecto a la ventana del navegador */
+    top: 0; left: 0;/* Posiciona el fondo en la esquina superior izquierda */
+    width: 100%;/* Abarca todo el ancho de la ventana */
+    height: 100%;/* Abarca todo el alto de la ventana */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    z-index: 5;/* Establece el fondo detrás de la ventana emergente */
+    display: none;/* Inicialmente no se muestra */
+}
+
+/* Cuando el fondo oscuro tiene la clase 'visible', se muestra */
+.fondo-oscuro.visible {
+    display: block;/* Muestra el fondo cuando tiene la clase 'visible' */
+}
+
+/* Ventana emergente centrada */
+.ventana-emergente {
+    position: fixed;/* Fija la ventana emergente en la pantalla */
+    top: 50%; left: 50%;/* La coloca en el centro de la ventana */
+    transform: translate(-50%, -50%); /* Ajusta la ventana para que esté centrada */
+    background-color: white;/* Fondo blanco para la ventana */
+    border: 2px solid rgb(255, 255, 255);/* Borde negro alrededor de la ventana */
+    padding: 20px;/* Padding interno de 20px */
+    width: 80%;/* Ancho del 80% de la ventana */
+    max-width: 400px;/* Ancho máximo de 400px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+    z-index: 10;/* Se coloca por encima del fondo oscuro */
+    display: flex;/* Usa flexbox para el contenido */
+    flex-direction: column;/* Organiza los elementos en columna */
+    align-items: center;/* Centra los elementos de forma horizontal */
+    text-align: center;/* Centra el texto dentro de la ventana */
+    border-radius: 5px;
+}
+
+/* Clase para ocultar la ventana emergente */
+.ventana-emergente.oculto {
+    display: none;/* La ventana se oculta cuando tiene la clase 'oculto' */
+}
+
+/* Título dentro de la ventana emergente */
+.texto-titulo {
+    font-size: 20px;/* Tamaño de fuente de 20px */
+    font-weight: bold;/* Negrita en el título */
+    margin-bottom: 10px;/* Margen inferior de 10px */
+}
+
+/* Descripción dentro de la ventana emergente */
+.texto-descripcion {
+    margin-bottom: 15px; /* Margen inferior de 15px */
+}
+
+/* Imagen dentro de la ventana emergente */
+.imagen {
+    max-width: 100%;/* Asegura que la imagen no sea más grande que el contenedor */
+    height: auto;/* Mantiene la proporción de la imagen */
+    border-radius: 5px;/* Bordes redondeados para la imagen */
+}
+
+/* Estilo del botón de cerrar dentro de la ventana emergente */
+.boton-cerrar {
+    background-color: black;/* Fondo negro para el botón */
+    color: white;/* Texto blanco en el botón */
+    padding: 10px 20px;/* Padding de 10px arriba y abajo, 20px a los lados */
+    margin-top: 15px;/* Margen superior de 15px */
+    cursor: pointer;/* Cursor de puntero al pasar sobre el botón */
+    border-radius: 5px;/* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto de hover en el botón de cerrar (cuando el ratón pasa por encima) */
+.boton-cerrar:hover {
+    background-color: red;/* Cambia el fondo a rojo cuando se pasa el ratón */
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .titulo9 {
+        margin-left: 20px;
+    }
+
+    .h1 {
+        font-size: 22px;
+        margin-left: 10%;
+    }
+
+    .inf-ods {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .inf-ods img {
+        max-width: 80%;
+    }
+
+    .datos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datos button {
+        width: 50%;
+    }
+
+    .retos,
+    .indicadores {
+        flex-direction: column;
+    }
+
+    .conectar button {
+        width: 90%;
+    }
+
+    .retos_principal {
+        flex-direction: column;
+    }
+
+    .image-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos generales */
+#panel-contenido {
+    font-family: "JetBrains Mono", monospace;
+}
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media screen and (max-width: 1024px) {
+    .titulo9 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .numero-titul {
+        font-size: 50px;
+    }
+
+    .h1 {
+        font-size: 24px;
+        margin-left: 10%;
+    }
+
+    .logo-ods9 {
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .inf-ods {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .inf-ods img {
+        max-width: 100%;
+    }
+
+    .datos {
+        flex-direction: column;
+        gap: 20px;
+        margin: 5vh 0;
+    }
+
+    .datos button {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .retos button, .conexionPeru, .inversionesMundial {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .titulo9 {
+        gap: 5px;
+        margin-left: 10px;
+    }
+
+    .numero-titul {
+        font-size: 40px;
+    }
+
+    .h1 {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .inf-ods p {
+        font-size: 18px;
+        padding: 5%;
+    }
+
+    .plant {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .datos span {
+        font-size: 18px;
+    }
+
+    .conexionPeru img, .inversionesMundial img {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .image-group {
+        gap: 10px;
+    }
+
+    .ventana-emergente {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .botonera {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.imagen-seccion {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* La sección ocupa toda la pantalla */
+    overflow: hidden;
+}
+
+.imagen-en-medio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* La imagen cubre toda la sección */
+    object-fit: cover;
+    opacity: 0; /* Inicialmente la imagen está oculta */
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1; /* La imagen queda detrás del texto */
+}
+
+.contenido-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    z-index: 1; /* El texto se muestra por encima de la imagen */
+}
+
+/* Ajustes para pantallas extra pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    .titulo9 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .inf-ods {
+        margin: 2%;
+    }
+
+    .retos_desafíos, .imagen_reto {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .retos button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .datos button {
+        width: 100%;
+    }
+
+    .botonera {
+        gap: 10px;
+    }
+}
+

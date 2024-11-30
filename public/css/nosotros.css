@@ -1,0 +1,110 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección: NOSOTROS */
+.NOSOTROS {
+  position: relative;
+  background-image: url(/public/image/nosotros.png); /* Cambia esta ruta a la imagen correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NOSOTROS-txt {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo general para las secciones */
+.Quienes-Somos-fondo,
+.Misión-fondo,
+.Visión-fondo,
+.Valores-fondo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 80px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  gap: 20px; /* Espacio entre la imagen y el texto */
+
+}
+
+/* Títulos de las secciones */
+.Quienes-Somos-txt,
+.Misión-txt,
+.Visión-txt,
+.Valores-txt {
+  position: absolute;
+  top: -25px; /* Ubica el texto fuera del borde superior */
+  background-color: #1a1a1a;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Contenido de las secciones */
+.Quienes-Somos-cont,
+.Misión-cont,
+.Visión-cont,
+.Valores-cont {
+  flex: 1;
+  padding: 5px;
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Estilo para las imágenes */
+.Quienes-Somos-fondo img,
+.Misión-fondo img,
+.Visión-fondo img,
+.Valores-fondo img {
+  width: 40%;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Orden y posicionamiento por sección */
+.Quienes-Somos-fondo {
+  flex-direction: row;
+}
+
+.Misión-fondo {
+  flex-direction: row-reverse;
+}
+
+.Visión-fondo {
+  flex-direction: row;
+}
+
+.Valores-fondo {
+  flex-direction: row-reverse;
+}

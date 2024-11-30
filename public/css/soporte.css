@@ -1,0 +1,186 @@
+/* Estilos generales */
+body { 
+    /* Configuración de la fuente principal y eliminación de márgenes y relleno predeterminados */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Estilo del encabezado fijo en la parte superior de la página */
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 10vh; /* Altura fija para el encabezado */
+    background-color: #ffffff; /* Fondo negro */
+    justify-content: space-between; /* Distribución uniforme de elementos */
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+main {
+    /* Alineamos el formulario al centro del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    /* Estilo del formulario */
+    transform: translateX(100px); /* Mueve el formulario 50px a la derecha */
+    margin-top: 100px;
+    padding: 35px 75px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.input-group {
+    /* Grupo de entrada con diseño de columna y texto alineado a la izquierda */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    /* Estilo para encabezados en el formulario */
+    color: #ffffff; /* Color del texto */
+    font-size: 36px; /* Tamaño más grande para el encabezado */
+    font-weight: 600;
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+input,
+textarea {
+    /* Estilo compartido para entradas y áreas de texto */
+    padding: 17px 25px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+    background-color: #fff7ed; /* Fondo claro */
+    border: 2px solid #faf4f0; /* Borde suave */
+    color: #000000; /* Color del texto */
+    outline: none; /* Elimina el contorno al enfocarse */
+    margin-bottom: 10px; /* Separación entre la etiqueta y el campo de entrada */
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    /* Estilo para los marcadores de posición */
+    color: #000000; /* Color tenue */
+    font-size: 14px; /* Aumentar el tamaño de la fuente de las etiquetas */
+
+}
+
+.btn {
+    /* Estilo de los botones */
+    font-size: 16px;
+    color: #FFFFFF; /* Texto blanco */
+    border: 0; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #d9684c; /* Fondo naranja */
+    box-shadow: 0 0 20px rgba(254, 80, 0, 0.4); /* Sombra */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+}
+
+.btn:hover {
+    /* Cambios de estilo al pasar el cursor sobre el botón */
+    background-color: #e09f4b; /* Color más claro */
+}
+
+/* Sección 1: Fondo con texto */
+.seccion-1 {
+    background-image: url(/image/fondoform.png); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    min-height: 100vh; /* Altura mínima, pero permite que crezca más allá si es necesario */
+    display: flex;
+    justify-content: space-between; /* Distribuye elementos uniformemente */
+    align-items: center;
+    padding: 50px; /* Espaciado interno uniforme */
+    position: relative;
+    overflow: hidden; /* Evita que los elementos se desborden fuera de la sección */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+}
+
+.texto-1 {
+    color: white; /* Texto blanco */
+    max-width: 500px; /* Ancho máximo */
+    margin: 20px 0; /* Agrega margen para separar del resto del contenido */
+}
+
+.texto-1 h1 {
+    font-size: 36px; /* Tamaño de fuente grande para encabezados */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.texto-1 p {
+    font-size: 18px; /* Fuente legible para párrafos */
+    line-height: 1.5; /* Aumenta la altura de línea para mejor lectura */
+}
+
+
+/* Sección 2: Preguntas despegables */
+.seccion-2 {
+    /* Contenedor para las preguntas */
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 50px; /* Espaciado interno */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.preguntas h2 {
+    /* Encabezado de la sección */
+    font-size: 24px;
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+details {
+    /* Contenedor para cada pregunta despegable */
+    margin-bottom: 20px; /* Espaciado entre preguntas */
+}
+
+details summary {
+    /* Resumen visible de cada pregunta */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor a "mano" */
+}
+
+details p {
+    /* Texto adicional dentro de cada pregunta */
+    margin-top: 10px; /* Espaciado superior */
+    font-size: 16px;
+    color: #333; /* Color oscuro */
+}
+
+/* Responsividad */
+@media (max-width: 991px) {
+    /* Ajustes para dispositivos con un ancho máximo de 991px */
+    body {
+        padding: 30px; /* Espaciado adicional en dispositivos pequeños */
+    }
+
+    .seccion-1 {
+        padding: 20px; /* Ajusta el espaciado interno */
+    }
+
+    form {
+        /* El formulario ocupa todo el ancho disponible */
+        width: 100%;
+        padding: 20px; /* Reduce el padding interno */
+    }
+
+    input {
+        /* Ajusta el tamaño del padding en las entradas */
+        padding: 15px;
+    }
+}

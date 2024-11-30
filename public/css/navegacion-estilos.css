@@ -1,0 +1,276 @@
+/* Estilos generales para el header y footer que se posicionan fijos en la parte superior e inferior de la página */
+.caja-header {
+  top: 0;
+  /* Posiciona el header al principio de la página */
+  left: 0;
+  right: 0;
+  /* Alinea el header a la izquierda */
+  /* Alinea el header a la derecha */
+  background-color: #000000;
+  /* Fondo blanco para el header */
+  padding: 20px;
+  /* Espaciado interno en el header */
+  display: flex;
+  position: fixed;
+  /* Flexbox para organizar los elementos del header */
+  justify-content: space-between;
+  /* Espacio entre el logo y el menú */
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  z-index: 1000;
+  /* Asegura que el header esté encima de otros elementos */
+}
+
+a {
+  text-decoration: none;
+  /* Opcional, elimina el subrayado */
+  color: inherit;
+  /* Mantiene el color del texto original */
+  outline: none;
+  /* Elimina el contorno azul al hacer clic */
+}
+
+a:focus {
+  outline: none;
+  /* Asegura que no se muestre el contorno al enfocar */
+}
+
+/* Estilos generales para el footer que se posiciona fijo en la parte inferior */
+.caja-footer {
+  bottom: 0;
+  /* Posiciona el footer al final de la página */
+  left: 0;
+  /* Alinea el footer a la izquierda */
+  right: 0;
+  /* Alinea el footer a la derecha */
+  background-color: #000000;
+  /* Fondo blanco para el footer */
+  padding: 20px;
+  /* Espaciado interno en el footer */
+  display: flex;
+  /* Flexbox para organizar los elementos del footer */
+  justify-content: space-between;
+  /* Espacio entre los elementos del footer */
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  z-index: 1000;
+  /* Asegura que el footer esté encima de otros elementos */
+}
+
+/* Estilos para el logo en el header */
+.logo {
+  display: flex;
+  /* Flexbox para alinear el logo y el nombre */
+  align-items: center;
+  /* Centra verticalmente el logo y el texto */
+}
+
+/* Estilos para la imagen del logo en el header */
+.logo img {
+  width: 50px;
+  /* Ajusta el tamaño del logo para hacerlo más pequeño */
+  height: auto;
+  /* Mantiene la proporción original del logo */
+}
+
+/* Estilos para el nombre del logo en el header */
+.nombre-logo {
+  font-size: clamp(20px, 1.5vw, 150px);
+  /* Tamaño de la fuente para el nombre del logo */
+  font-weight: bold;
+  /* Hace el texto en negrita */
+  margin-left: 10px;
+  /* Añade un espacio entre el logo y el nombre */
+  color: #ffffff;
+}
+
+/* Estilos para el menú de navegación en el header */
+.menu {
+  display: flex;
+  /* Flexbox para alinear los enlaces en línea */
+  gap: 30px;
+  /* Espacio entre cada enlace del menú */
+}
+
+/* Estilos para cada enlace del menú */
+.menu a {
+  text-decoration: none;
+  /* Elimina el subrayado por defecto de los enlaces */
+  color: #ffffff;
+  /* Color negro para el texto de los enlaces */
+  font-size: 16px;
+  /* Tamaño de la fuente de los enlaces */
+  padding: 5px;
+  /* Espaciado interno en los enlaces */
+  transition: 0.3s;
+  /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el cursor sobre un enlace del menú */
+.menu a:hover {
+  background-color: rgb(206, 195, 184);
+  border-radius: 5px;
+  /* Bordes redondeados alrededor del enlace */
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  /* Indica que es interactivo */
+  transition: 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  /* Oculta el contenido por defecto */
+  position: absolute;
+  background-color: #333;
+  /* Fondo del menú desplegable */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  /* Sombra */
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  /* Asegura que quede encima */
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+  /* Fondo al pasar el mouse */
+  border-radius: 5px;
+}
+
+/* Mostrar el dropdown al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para la sección logo y nombre en el footer */
+.caja-footer .logo-nombre {
+  display: flex;
+  /* Flexbox para alinear el logo y el nombre */
+  align-items: center;
+  /* Centra verticalmente el logo y el texto */
+  gap: 10px;
+  /* Añade espacio entre el logo y el nombre */
+}
+
+/* Estilos para la imagen del logo en el footer */
+.caja-footer .logo-nombre img {
+  width: 50px;
+  /* Tamaño pequeño del logo en el footer */
+  height: auto;
+  /* Mantiene la proporción original del logo */
+}
+
+/* Estilos para el nombre en el footer */
+.nombre {
+  font-size: 24px;
+  /* Tamaño de la fuente para el nombre en el footer */
+  font-weight: bold;
+  /* Hace el texto en negrita */
+  color: #ffffff;
+}
+
+/* Estilos para la navegación en el footer (en dos columnas) */
+.navegacion {
+  display: grid;
+  /* Usamos grid para colocar los enlaces en dos columnas */
+  grid-template-columns: repeat(2,
+      1fr);
+  /* Define dos columnas con el mismo ancho */
+  gap: 20px;
+  /* Espacio entre las columnas */
+}
+
+/* Estilos para los enlaces en la navegación del footer */
+.navegacion a {
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+  color: #ffffff;
+  /* Color negro para los enlaces */
+  font-size: 16px;
+  /* Tamaño de la fuente de los enlaces */
+}
+
+/* Estilos para la sección de contacto en el footer */
+.contacto {
+  display: flex;
+  /* Flexbox para apilar los elementos en columna */
+  flex-direction: column;
+  /* Coloca los elementos en columna */
+  gap: 10px;
+  /* Espacio entre los elementos de contacto */
+  margin-left: 20px;
+  /* Mueve la sección de contacto hacia la izquierda */
+}
+
+/* Estilos específicos para la clase red en contacto */
+.contacto .red {
+  color: red;
+  /* Coloca el texto de TikTok en color rojo */
+}
+
+/* Estilos específicos para los correos en contacto */
+.contacto .correo {
+  color: gray;
+  /* Coloca los correos en color gris */
+}
+
+
+.menu-hamburguesa {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-hamburguesa span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 1.3em;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+  }
+
+  .menu.activo {
+    display: flex;
+  }
+}

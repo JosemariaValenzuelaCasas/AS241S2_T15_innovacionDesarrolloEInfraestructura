@@ -1,0 +1,91 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/*parte de arriba de la pagina*/
+
+a {
+    text-decoration: none;
+}
+
+
+.contenedor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(imagenes/que\ puedes\ hacer.png);
+    height: 100vh;
+    font-size: 32px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    width: 750px;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+strong {
+    font-size: 20px;
+}
+
+li {
+    margin-top: 2%;
+    line-height: 1.6;
+}
+
+li a {
+   text-decoration: none;
+   color: #fff;
+}
+
+li a:hover {
+    color: rgba(42, 42, 243, 0.747);
+    transition: color 0.3s ease;
+}
+
+
+.imagen {
+    margin-top: 6%;
+    display: block;
+    max-width: 540px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 6%;
+
+}
+
+.individual {
+    margin-top: 5%;
+    max-width: 500px;
+    margin-left: 4%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.562);
+}
+
+.contenedor-contenido {
+    display: flex;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.fondo {
+    background-color: #fff;
+    color: #000;
+}
